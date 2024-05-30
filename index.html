@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My port folio web site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/962df23dac.js" crossorigin="anonymous"></script> 
+    
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="portfolio-header.webp" class="logo">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">My Services</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Web developer</p><br>
+        <h1>Hi,I'am <span>Vijayasanthi</span><br> from Coimbatore</h1>
+    </div>
+</div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.png">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hai...Am Vijayasanthi.Am from Coimbatore.Am completed M.Phil Computer Science in K.G college of Arts and Science.There are four members in our family.My husband doing business.My son studying fifth standard in Amirta Vidyalayam.My daughter Studying LKG in same school.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>CSS</li>
+                        <li><span>Java Script</span><br>Web development</li>
+                        <li><span>Website development</span><br>App development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>M.Phil Computer Science</span><br>K.G College of Arts and Science</li>
+                        <li><span>M.Sc Computer Science</span><br>Bharathiyar University</li>
+                        <li><span>B.C.A computer Application</span><br>K.G College of Arts and Science</li>
+                        <li><span>H.S.C/S.S.L.C</span><br>Government Higher Secondary School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li>Reading News paper</li>
+                        <li>Cooking</li>
+                        <li>Surfing</li>
+                        <li>Caring My Babies</li>
+                        <li>Creating New things in Art and Craft</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website 
+                        development rather than software.
+                    <a href="#">learn more</a>
+
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>App Design</h1>
+                    <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website 
+                        development rather than software.
+                    <a href="#">learn more</a>
+
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1>UI/UX Design</h1>
+                    <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website 
+                        development rather than software.
+                    <a href="#">learn more</a>
+
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+<div class="work-list">
+    <div class="work">
+        <img src="resume.jpeg">
+    </div>
+    <div class="work">
+        <img src="quiz.jpeg">
+    </div>
+</div>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i></i>sviji2369@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9952467391</p>
+             <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+                </div>
+                <div class="contact-right"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab")
+            }
+    </script>
+    
+</body>
+</html>
